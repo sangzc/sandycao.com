@@ -2,12 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--
+        META TAG for responsive design
+        name="viewport" // gives the browser instructions on how to control the page's dimensions and scaling
+        content="width=device-width" // sets the width of the page to follow the screen-wdth of the device
+        initial-scale = 1.0 // sets the initial zoom lvl when the page is first loaded by the browser
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        META TAG for IE Compatibility
+        http-equiv="X-UA-Compatible" // when IE encounters this tag, it starts over using the designated version's engine (which takes a hit on performance)
+        content="ie=edge" // tells IE to display content in the highest mode available. 
+    -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>sandy cao</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h6>caution: student hard at work</h1>  
-    <img src="https://i.imgur.com/9uQCqTn.gif" width=250px>  
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<!-- There's a flexbox going on here. display: flex is set in the section selector -->
+        <section id="home">
+            <img src="images/flossin.JPG" class="profile-img">
+                <br>
+                <div class="profile-subtext">
+                    <h1>sandy cao</h1>
+                    <h6>
+                    <p>i am a web developer student at <a href="http://www.rithmschool.com">rithm school</a>.</p>
+                    <p>my passion is building simple and fresh user experiences.</p>
+                    </h6>
+                </div>
+        </section>
+
+        <section id="about">
+            <div>
+            <p>i have a burrito named after me in Bali, Indonesia.</p>
+            <p>i have travelled to over 12 countries in under 2 years.</p>
+            <p>i have fallen into a rice paddy on a motorbike</p>
+            <p>did i mention i like to travel?</p>
+            <p>and my dog.</p>
+            <p>and cooking excessive amounts of food for people.</p>
+            <p>sansa stark will take the iron throne</p>
+            <p>i enjoy learning about web technologies and creating simple online spaces for people to play in</p>
+            </div>
+
+            <div class="button-container">    
+                <a href="images/Sandy Cao Resume 2018.pdf" target="_blank">
+                    <button type="button" id="button">resume</button>
+                </a>
+            </div>
+
+        </section>
+        
+        <section id="contact">
+            <p>share something with me at <a href="sangzicao@gmail.com">sangzicao@gmail.com</a></p>
+        </section>
+
+    </main>
+    <footer>
+        <p>learn more: <a href="https://www.instagram.com/sangzi/">instagram</a>, <a href="https://github.com/sangzc/sangzc.github.io">github</a>, <a href="https://www.linkedin.com/in/sandy-cao/">linkedin</a></p> 
+    </footer>
 </body>
 </html>
