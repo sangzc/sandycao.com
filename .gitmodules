@@ -1,0 +1,3 @@
+[submodule "meme-generator"]
+	path = meme-generator
+	url = git@github.com:sangzc/meme-generator.git
